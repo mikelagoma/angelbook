@@ -17,10 +17,10 @@ function app(opts) {
   search.addWidget(
     instantsearch.widgets.searchBox({
       container: '#search-input',
-      placeholder: 'Search for products',
-      cssClasses: {
-        input: 'input'
-      }
+      placeholder: 'Search for People',
+      // cssClasses: {
+      //   input: 'input'
+      // }
     })
   );
 

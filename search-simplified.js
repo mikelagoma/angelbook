@@ -18,6 +18,9 @@ function app(opts) {
     instantsearch.widgets.searchBox({
       container: '#search-input',
       placeholder: 'Search for products',
+      cssClasses: {
+        input: 'input'
+      }
     })
   );
 

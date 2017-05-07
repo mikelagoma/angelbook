@@ -42,11 +42,11 @@ function app(opts) {
     })
   );
 
-  search.addWidget(
-    instantsearch.widgets.stats({
-      container: '#stats',
-    })
-  );
+  // search.addWidget(
+  //   instantsearch.widgets.stats({
+  //     container: '#stats',
+  //   })
+  // );
 
   // search.addWidget(
   //   instantsearch.widgets.sortBySelector({

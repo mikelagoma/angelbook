@@ -110,9 +110,15 @@ header img {
   background-image: url(img/delete_icon.png);
 }
 
-#add-site {
-
+.add-site {
+  position: absolute;
   float: right;
+  top: 0;
+  right: 0;
   display: inline;
 
+}
+
+.columns {
+  margin-top: 0px;
 }

@@ -93,6 +93,8 @@ header img {
 #search-input-icon {
   position: relative;
 }
+
+
 #search-input-icon:before {
   position: absolute;
   right: 0;
@@ -106,4 +108,11 @@ header img {
 #search-input-icon.empty:before {
   cursor: pointer;
   background-image: url(img/delete_icon.png);
+}
+
+#add-site {
+
+  float: right;
+  display: inline;
+
 }

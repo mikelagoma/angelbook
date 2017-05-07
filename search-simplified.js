@@ -27,8 +27,8 @@ function app(opts) {
       hitsPerPage: 10,
       cssClasses:
       { 
-        root: 'row',
-        item: 'col-md-4'
+        root: 'columns is-multiline',
+        item: 'column is-3'
       }
       ,
       templates: { 

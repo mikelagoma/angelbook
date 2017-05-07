@@ -59,37 +59,37 @@ function app(opts) {
     })
   );
 
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#category',
-      attributeName: 'categories',
-      sortBy: ['isRefined', 'count:desc', 'name:asc'],
-      limit: 10,
-      operator: 'or',
-      templates: {
-        header: getHeader('Category'),
-      },
-    })
-  );
+  // search.addWidget(
+  //   instantsearch.widgets.refinementList({
+  //     container: '#category',
+  //     attributeName: 'categories',
+  //     sortBy: ['isRefined', 'count:desc', 'name:asc'],
+  //     limit: 10,
+  //     operator: 'or',
+  //     templates: {
+  //       header: getHeader('Category'),
+  //     },
+  //   })
+  // );
 
-  search.addWidget(
-    instantsearch.widgets.refinementList({
-      container: '#brand',
-      attributeName: 'brand',
-      sortBy: ['isRefined', 'count:desc', 'name:asc'],
-      limit: 10,
-      operator: 'or',
-      searchForFacetValues: {
-        placeholder: 'Search for brands',
-        templates: {
-          noResults: '<div class="sffv_no-results">No matching brands.</div>',
-        },
-      },
-      templates: {
-        header: getHeader('Brand'),
-      },
-    })
-  );
+  // search.addWidget(
+  //   instantsearch.widgets.refinementList({
+  //     container: '#brand',
+  //     attributeName: 'brand',
+  //     sortBy: ['isRefined', 'count:desc', 'name:asc'],
+  //     limit: 10,
+  //     operator: 'or',
+  //     searchForFacetValues: {
+  //       placeholder: 'Search for brands',
+  //       templates: {
+  //         noResults: '<div class="sffv_no-results">No matching brands.</div>',
+  //       },
+  //     },
+  //     templates: {
+  //       header: getHeader('Brand'),
+  //     },
+  //   })
+  // );
 
   // search.addWidget(
   //   instantsearch.widgets.rangeSlider({

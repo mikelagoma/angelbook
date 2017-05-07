@@ -20,12 +20,12 @@
   </header>
 
   <main>
-    <div id="left-column">
+<!--     <div id="left-column">
       <div id="category" class="facet"></div>
       <div id="brand" class="facet"></div>
       <div id="price" class="facet"></div>
       <div id="type" class="facet"></div>
-    </div>
+    </div> -->
 
     <div id="right-column">
       <div id="sort-by-wrapper"><span id="sort-by"></span></div>
@@ -43,7 +43,7 @@
 
   <!-- TEMPLATES -->
   <script type="text/html" id="hit-template">
-    <div class="hit">
+<!--     <div class="hit">
       <div class="hit-image">
         <img src="{{image_url}}" alt="{{name}}">
       </div>
@@ -52,6 +52,20 @@
         <h2 class="hit-name">{{{_highlightResult.full_name.value}}}</h2>
         <p class="hit-description">{{{_highlightResult.description.value}}}</p>
         <h2>Age: {{{age}}}</h2>
+      </div>
+    </div> -->
+
+    <div class="card">
+      <div class="hit">
+        <div class="hit-image">
+          <img src="{{image_url}}" alt="{{name}}">
+        </div>
+        <div class="hit-content">
+        <h3 class="hit-price">${{price}}</h3>
+        <h2 class="hit-name">{{{_highlightResult.full_name.value}}}</h2>
+        <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+          <h2>Age: {{{age}}}</h2>
+        </div>
       </div>
     </div>
   </script>

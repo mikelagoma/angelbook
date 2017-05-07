@@ -8,7 +8,8 @@
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
-  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./assets/style.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
 
@@ -26,12 +27,21 @@
       <div id="price" class="facet"></div>
       <div id="type" class="facet"></div>
     </div> -->
-
-    <div id="right-column">
-      <div id="sort-by-wrapper"><span id="sort-by"></span></div>
-      <div id="stats"></div>
-      <div id="hits"></div>
-      <div id="pagination"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="right-column">
+            <div id="sort-by-wrapper"><span id="sort-by"></span></div>
+            <div id="stats"></div>
+            <div class="row">
+              <div class="col-12">
+                <div id="hits"></div>
+              </div>
+            </div>
+            <div id="pagination"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -55,19 +65,22 @@
       </div>
     </div> -->
 
-    <div class="card">
-      <div class="hit">
-        <div class="hit-image">
-          <img src="{{image_url}}" alt="{{name}}">
-        </div>
-        <div class="hit-content">
-        <h3 class="hit-price">${{price}}</h3>
-        <h2 class="hit-name">{{{_highlightResult.full_name.value}}}</h2>
-        <p class="hit-description">{{{_highlightResult.description.value}}}</p>
-          <h2>Age: {{{age}}}</h2>
+  
+      <div class="hit card">
+
+            <img class="card-img-top img-fluid" src="{{image_url}}" alt="{{name}}" height="350px" width="350px">
+
+          <div class="card-block">
+            <div class="hit-content">
+              <h3 class="hit-price">${{price}}</h3>
+              <h2 class="hit-name">{{{_highlightResult.full_name.value}}}</h2>
+              <p class="hit-description">{{{_highlightResult.description.value}}}</p>
+              <h2>Age: {{{age}}}</h2>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+ 
   </script>
 
   <script type="text/html" id="no-results-template">

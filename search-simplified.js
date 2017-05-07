@@ -25,10 +25,17 @@ function app(opts) {
     instantsearch.widgets.hits({
       container: '#hits',
       hitsPerPage: 10,
-      templates: {
+      cssClasses:
+      { 
+        root: 'row',
+        item: 'col-md-4'
+      }
+      ,
+      templates: { 
         item: getTemplate('hit'),
         empty: getTemplate('no-results'),
-      },
+      }
+      
     })
   );
 
